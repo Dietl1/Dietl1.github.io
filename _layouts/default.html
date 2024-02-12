@@ -13,12 +13,6 @@
     {% include head-custom.html %}
 
   <style>
-button {
-  background-color: transparent;
-  height: 60px;
-  width: 200px;
-  font-size: 1.5em;
-}
     
 .button-container {
   display: flex;
@@ -30,7 +24,8 @@ button {
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  textalign: center;
+  text-align: center;
+  
 
   &:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -42,7 +37,9 @@ button {
   + .button-container {
     margin-left: 1rem;
     }
-  
+  link {
+    color: white;
+  }
   </style>
   </head>
   <body>
@@ -52,9 +49,9 @@ button {
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
 <div class="button-container">
     |
-  <a href="">Button 1</a>  |
-  <a href="">Button 2</a>  |
-  <a href="">Button 3</a>  |
+  <a href="">Button 1</a>      |
+  <a href="">Button 2</a>      |
+  <a href="">Button 3</a>      |
 </div>
     </header>
     
