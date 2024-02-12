@@ -13,22 +13,19 @@
     {% include head-custom.html %}
 
   <style>
-.navtext {
-  color: white;
- align: center;
-}
+
     
 .button-container {
   display: flex;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 0, 0.7);
+  color: white;
   background-color: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.2);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  align-content: space-between;
+  justify-content: space-between;
   
   &:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -45,13 +42,9 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
 
 <div class="button-container">
-
-  <div class="navtext">|
-  <a href="">Button 1</a>      |
-  <a href="">Button 2</a>      |
-  <a href="">Button 3</a>      |
-  </div>
-
+  <a href="">Button 1</a> 
+  <a href="">Button 2</a> 
+  <a href="">Button 3</a> 
 </div>
     </header>
     
