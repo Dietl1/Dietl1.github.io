@@ -13,6 +13,10 @@
     {% include head-custom.html %}
 
   <style>
+.navtext {
+  color: white;
+  text-align: center;
+}
     
 .button-container {
   display: flex;
@@ -48,11 +52,12 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
 <div class="button-container">
-    |
+ <div class="navtext">|
   <a href="">Button 1</a>      |
   <a href="">Button 2</a>      |
   <a href="">Button 3</a>      |
 </div>
+  </div>
     </header>
     
     
